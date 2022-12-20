@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  title = 'Angular-Observables';
+  title = 'Add To Shopping Cart (Observables)';
 }
