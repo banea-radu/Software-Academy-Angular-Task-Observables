@@ -1,34 +1,64 @@
 import { Injectable } from '@angular/core';
+// import { BehaviorSubject } from 'rxjs';
+// import { ProductModel } from '../model/product.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  productsList = [
+  private products = [
     {
       "id":1,
-      "title":"Item 1",
+      "title":"Product 1",
       "price":20.00,
-      "description":"Item 1 decription."
+      "description":"Product 1 decription."
     },
     {
       "id":2,
-      "title":"Item 2",
+      "title":"Product 2",
       "price":10.0,
-      "description":"Item 2 description."
+      "description":"Product 2 description."
     },
     {
       "id":3,
-      "title":"Item 3",
+      "title":"Product 3",
       "price":5.00,
-      "description":"Item 3 description."
+      "description":"Product 3 description."
     }
   ]
 
-  constructor() { }
+  // private products = new BehaviorSubject<any>(
+  //   [
+  //     {
+  //       "id":1,
+  //       "title":"Product 1",
+  //       "price":20.00,
+  //       "description":"Product 1 decription."
+  //     },
+  //     {
+  //       "id":2,
+  //       "title":"Product 2",
+  //       "price":10.0,
+  //       "description":"Product 2 description."
+  //     },
+  //     {
+  //       "id":3,
+  //       "title":"Product 3",
+  //       "price":5.00,
+  //       "description":"Product 3 description."
+  //     }
+  //   ]
+  // );
+
+  // constructor() { }
 
   getProducts(){
-    return this.productsList;
+    return this.products;
   }
 
+  // getProducts(){
+  //   // this.subject = this.productsList;
+  //   // console.log(this.products);
+  //   return this.products;
+  // }
 }

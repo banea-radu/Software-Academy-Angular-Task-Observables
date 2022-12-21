@@ -3,11 +3,11 @@ import { ShoppingCartService } from 'src/app/service/shoppingCart.service';
 import { ProductsService } from 'src/app/service/products.service';
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css']
 })
-export class ProductComponent {
+export class ProductsComponent {
   products: any;
 
   constructor(private productsList: ProductsService, private shoppingCartService: ShoppingCartService) { }

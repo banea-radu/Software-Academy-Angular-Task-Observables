@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CartComponent } from './component/cart/cart.component';
-import { ProductComponent } from './component/product/product.component';
+import { ShoppingCartComponent } from './component/shoppingCart/shoppingCart.component';
+import { ProductsComponent } from './component/products/products.component';
 import { HeaderComponent } from './component/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CartComponent,
-    ProductComponent,
+    ShoppingCartComponent,
+    ProductsComponent,
     HeaderComponent
   ],
   imports: [
