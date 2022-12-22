@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ShoppingCartService } from 'src/app/service/shoppingCart.service';
-import { ShoppingCartProductModel, ShoppingCartProductsModel } from './shoppingCartProducts.model';
+import { ProductModel } from '../../model/products.model';
+import { ShoppingCartProductModel, ShoppingCartProductsModel } from '../../model/shoppingCartProducts.model';
 
 @Component({
   selector: 'app-shoppingCart',
@@ -12,8 +13,10 @@ export class ShoppingCartComponent {
   shoppingCartProducts: ShoppingCartProductsModel = [];
   shoppingCartTotalPrice: number = 0;
 
-  constructor(private shoppingCartService: ShoppingCartService) {
-    shoppingCartService.shoppingCartProduct.subscribe(res => {
+  constructor(private shoppingCartService: ShoppingCartService) {}
+
+  ngOnInit() {
+    this.shoppingCartService.shoppingCartProduct.subscribe( (res: ProductModel) => {
       this.shoppingCartNumberOfProducts++;
       
       const productAlreadyInCart = this.shoppingCartProducts.find( (element: ShoppingCartProductModel) => element.id == res.id);

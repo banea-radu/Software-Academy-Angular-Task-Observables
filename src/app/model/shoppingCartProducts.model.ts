@@ -1,4 +1,4 @@
-import { ProductModel } from '../products/products.model';
+import { ProductModel } from './products.model';
 
 export interface ShoppingCartProductModel extends ProductModel {
   index: number,
