@@ -25,7 +25,7 @@
     - A service that allows communication between components using an Observable/Subject type and in which to keep the list of products.
     - We can use bootstrap or whatever makes our design easy, the focus being on functionality.
 
-
+##
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
 ## Development server
