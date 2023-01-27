@@ -1,6 +1,6 @@
 # Project for the Web Developer course, by Software Academy from Sibiu.
 
-## Live version deployed here: https://angular-reactive-form-validation.netlify.app/
+## Live version deployed here: https://angular-add-products-to-cart-observab.netlify.app/
 
 ## Benefit:
   - In order to have dynamic data in our future Angular application, we have to create in advance a service that shares data between components
